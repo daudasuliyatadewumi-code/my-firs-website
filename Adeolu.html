@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADEHUB - Premium boutique offering the finest clothes, bags, shoes, and jewelry.">
+    <title>ADEHUB | Luxury Boutique</title>
+    <link rel="stylesheet" href="Adeolu.css">
+<slot></slot>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ADEHUB</a>
+            <ul class="nav-links">
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-image-container">
+            <img src="IMG/hero.png" alt="ADEHUB Luxury Collection" class="hero-bg">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1>Define Your Elegance</h1>
+            <p>Discover our exclusive collection of premium clothing, handcrafted bags, designer shoes, and exquisite
+                jewelry.</p>
+            <a href="#collections" class="cta-button">Explore Collection</a>
+        </div>
+    </header>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections-section">
+        <div class="section-header">
+            <h2>The Collections</h2>
+            <div class="divider"></div>
+        </div>
+        <a href="show more.html"></a>
+        <div class="category-grid">
+            <!-- Clothes -->
+            <a href="show more.html#apparel" class="category-card reveal">
+                <div class="card-image">
+                    <img src="IMG/clothes.png" alt="Luxury Clothes">
+                </div>
+                <div class="card-content">
+                    <h3>Apparel</h3>
+                    <span class="shop-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Bags -->
+            <a href="show more.html#handbags" class="category-card reveal">
+                <div class="card-image">
+                    <img src="IMG/bags.png" alt="Designer Bags">
+                </div>
+                <div class="card-content">
+                    <h3>Handbags</h3>
+                    <span class="shop-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Shoes -->
+            <a href="show more.html#footwear" class="category-card reveal">
+                <div class="card-image">
+                    <img src="IMG/shoes.png" alt="Premium Shoes">
+                </div>
+                <div class="card-content">
+                    <h3>Footwear</h3>
+                    <span class="shop-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Jewelry -->
+            <a href="show more.html#jewelry" class="category-card reveal">
+                <div class="card-image">
+                    <img src="IMG/jewelry.png" alt="Exquisite Jewelry">
+                </div>
+                <div class="card-content">
+                    <h3>Jewelry</h3>
+                    <span class="shop-link">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Banner -->
+    <section class="featured-banner reveal">
+        <div class="banner-content">
+            <h2>Timeless Craftsmanship</h2>
+            <p>Every piece in our boutique is carefully selected to represent the pinnacle of design, quality, and
+                luxury. Elevate your everyday with ADEHUB.</p>
+            <a href="#" class="outline-button">Our Story</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>ADEHUB</h2>
+                <p>Curating the finest in luxury fashion and accessories for the modern aesthete.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Footwear</a></li>
+                    <li><a href="#">Jewelry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Visit Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> No22, Adeolu plaza,<br>Ikorodu, Lagos State, Nigeria</p>
+                <p><i class="fa-solid fa-phone"></i> 09169679845</p>
+                <p><i class="fa-solid fa-phone"></i> 09076452315</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ADEHUB Boutique. All rights reserved. <a href="admin.html" style="color: inherit; text-decoration: none; opacity: 0.3; font-size: 0.8rem; margin-left: 10px;">Admin</a></p>
+        </div>
+    </footer>
+
+    <script src="Adeolu.js"></script>
+</body>
+
+</html>
