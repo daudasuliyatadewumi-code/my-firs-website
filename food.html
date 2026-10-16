@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapital Kitchen | Order Delicious Food</title>
+  <link rel="stylesheet" href="food.css">
+  <script src="food.js" defer></script>
+</head>
+<body data-whatsapp="234XXXXXXXXXX">
+
+<header class="navbar">
+  <a class="logo" href="#home">Kapital <span>Kitchen</span></a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#delivery" id="delivery-link">Delivery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="cart-button" class="cart-button" type="button">
+    🛒 Cart (<span id="cart-count">0</span>)
+  </button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div>
+      <p class="eyebrow">WELCOME TO KAPITAL KITCHEN</p>
+      <h1>Good food.<br><span>Happy moments.</span></h1>
+      <p>Discover delicious Nigerian meals, tasty snacks and refreshing drinks, prepared with love.</p>
+      <a href="#menu" class="primary-button">Explore Our Menu</a>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85"
+      alt="Delicious freshly prepared food">
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="section-heading">
+      <p class="eyebrow">MADE WITH LOVE</p>
+      <h2>Explore Our Menu</h2>
+      <p>Choose your favourite category and find something delicious.</p>
+    </div>
+
+    <div class="category-list" id="category-list">
+      <button class="category-btn active" data-category="All">All Foods</button>
+      <button class="category-btn" data-category="Rice">Rice</button>
+      <button class="category-btn" data-category="Swallow">Swallow</button>
+      <button class="category-btn" data-category="Snacks">Snacks</button>
+      <button class="category-btn" data-category="Protein">Protein</button>
+      <button class="category-btn" data-category="Soup">Soup</button>
+      <button class="category-btn" data-category="Drinks">Drinks</button>
+    </div>
+
+    <div class="food-grid" id="food-grid">
+
+      <!-- RICE -->
+      <article class="food-card" data-category="Rice">
+        <img src="IMG/jollof.jpg">
+        <div class="food-info">
+          <span class="food-category">Rice</span>
+          <h3>Jollof Rice</h3>
+          <p>Rich, flavourful Nigerian rice.</p>
+          <div class="food-bottom">
+            <strong>₦1,000</strong>
+            <button class="add-to-cart" data-name="Jollof Rice" data-price="1000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Rice">
+        <img src="IMG/fried.jpg">
+             <div class="food-info">
+          <span class="food-category">Rice</span>
+          <h3>Fried Rice</h3>
+          <p>Colourful rice with vegetables.</p>
+          <div class="food-bottom">
+            <strong>₦1,200</strong>
+            <button class="add-to-cart" data-name="Fried Rice" data-price="1200">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Rice">
+        <img src="IMG/coconut.jpg">
+        <div class="food-info">
+          <span class="food-category">Rice</span>
+          <h3>Coconut Rice</h3>
+          <p>Fragrant rice with coconut flavour.</p>
+          <div class="food-bottom">
+            <strong>₦1,200</strong>
+            <button class="add-to-cart" data-name="Coconut Rice" data-price="1200">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Rice">
+        <img src="IMG/white rice.jpg">
+        <div class="food-info">
+          <span class="food-category">Rice</span>
+          <h3>White Rice & Stew</h3>
+          <p>White rice with tasty tomato stew.</p>
+          <div class="food-bottom">
+            <strong>₦1,000</strong>
+            <button class="add-to-cart" data-name="White Rice and Stew" data-price="1000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Rice">
+        <img src="IMG/ofada.jpg">
+        <div class="food-info">
+          <span class="food-category">Rice</span>
+          <h3>Ofada Rice & Sauce</h3>
+          <p>Traditional rice served with sauce.</p>
+          <div class="food-bottom">
+            <strong>₦2,000</strong>
+            <button class="add-to-cart" data-name="Ofada Rice and Sauce" data-price="2000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- SWALLOW -->
+      <article class="food-card" data-category="Swallow">
+        <img src="IMG/amala.jpg">
+        <div class="food-info">
+          <span class="food-category">Swallow</span>
+          <h3>Amala</h3>
+          <p>Amala served with ewedu and stew.</p>
+          <div class="food-bottom">
+            <strong>₦500</strong>
+            <button class="add-to-cart" data-name="Amala and Ewedu" data-price="500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Swallow">
+        <img src="IMG/eba.jpg" alt="Eba">
+        <div class="food-info">
+          <span class="food-category">Swallow</span>
+          <h3>Eba</h3>
+          <p>Eba with rich egusi soup.</p>
+          <div class="food-bottom">
+            <strong>₦200</strong>
+            <button class="add-to-cart" data-name="Eba and Egusi" data-price="200">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Swallow">
+        <img src="IMG/pound.jpg" alt="Poundedyam">
+        <div class="food-info">
+          <span class="food-category">Swallow</span>
+          <h3>Pounded Yam</h3>
+          <p>Soft pounded yam with egusi soup.</p>
+          <div class="food-bottom">
+            <strong>₦500</strong>
+            <button class="add-to-cart" data-name="Pounded Yam and Egusi" data-price="500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Swallow">
+        <img src="IMG/semo.jpg" alt="Semovita and soup">
+        <div class="food-info">
+          <span class="food-category">Swallow</span>
+          <h3>Semovita</h3>
+          <p>Smooth swallow with ogbono soup.</p>
+          <div class="food-bottom">
+            <strong>₦300</strong>
+            <button class="add-to-cart" data-name="Semovita and Ogbono" data-price="300">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Swallow">
+        <img src="IMG/fufu.jpg" alt="Fufu ">
+        <div class="food-info">
+          <span class="food-category">Swallow</span>
+          <h3>Fufu</h3>
+          <p>Traditional fufu with vegetable soup.</p>
+          <div class="food-bottom">
+            <strong>₦200</strong>
+            <button class="add-to-cart" data-name="Fufu and Vegetable Soup" data-price="200">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- SNACKS -->
+      <article class="food-card" data-category="Snacks">
+        <img src="IMG/chikenpie.jpg">
+          <div class="food-info">
+          <span class="food-category">Snacks</span>
+          <h3>Chicken Pie</h3>C
+          <p>Golden pastry with savoury filling.</p>
+          <div class="food-bottom">
+            <strong>₦1,500</strong>
+            <button class="add-to-cart" data-name="Chicken Pie" data-price="1500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Snacks">
+        <img src="IMG/meatpie.jpg" alt="Meat pie">
+        <div class="food-info">
+          <span class="food-category">Snacks</span>
+          <h3>Meat Pie</h3>
+          <p>Golden pastry with savoury filling.</p>
+          <div class="food-bottom">
+            <strong>₦1,500</strong>
+            <button class="add-to-cart" data-name="Meat Pie" data-price="1500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Snacks">
+        <img src="IMG/doughnut.jpg" alt="Doughnuts">
+        <div class="food-info">
+          <span class="food-category">Snacks</span>
+          <h3>Doughnuts</h3>
+          <p>Soft, sweet doughnuts.</p>
+          <div class="food-bottom">
+            <strong>₦500</strong>
+            <button class="add-to-cart" data-name="Doughnuts" data-price="500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Snacks">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Cake">
+        <div class="food-info">
+          <span class="food-category">Snacks</span>
+          <h3>Big Cake</h3>
+          <p>Sweet cake for a lovely treat.</p>
+          <div class="food-bottom">
+            <strong>₦10,000</strong>
+            <button class="add-to-cart" data-name="Big Cake" data-price="10000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Snacks">
+        <img src="IMG/chinchin.jpg" alt="Chin chin">
+        <div class="food-info">
+          <span class="food-category">Snacks</span>
+          <h3>Chin Chin Pack</h3>
+          <p>Crunchy Nigerian favourite.</p>
+          <div class="food-bottom">
+            <strong>₦1,000</strong>
+            <button class="add-to-cart" data-name="Chin Chin Pack" data-price="1000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROTEIN -->
+      <article class="food-card" data-category="Protein">
+        <img src="IMG/roasted chi.jpg" alt="roasted chicken">
+        <div class="food-info">
+          <span class="food-category">Protein</span>
+          <h3>Roasted Chicken</h3>
+          <p>Seasoned chicken with pepperd coating.</p>
+          <div class="food-bottom">
+            <strong>₦3,000</strong>
+            <button class="add-to-cart" data-name="Roasted Chicken" data-price="3000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Protein">
+        <img src="IMG/beef.jpg" alt="Grilled chicken">
+        <div class="food-info">
+          <span class="food-category">Protein</span>
+          <h3>Fried Beef</h3>
+          <p>Jfried beef.</p>
+          <div class="food-bottom">
+            <strong>₦500</strong>
+            <button class="add-to-cart" data-name="Fried Beef" data-price="5500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Protein">
+        <img src="IMG/hake fish.jpg" alt="Fish">
+        <div class="food-info">
+          <span class="food-category">Protein</span>
+          <h3>Hake Fish</h3>
+          <p>Well-seasoned hake fish.</p>
+          <div class="food-bottom">
+            <strong>₦3,000</strong>
+            <button class="add-to-cart" data-name="Hake Fish" data-price="3000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Protein">
+        <img src="IMG/panla fish.jpg" alt="Beef">
+        <div class="food-info">
+          <span class="food-category">Protein</span>
+          <h3>Eja Panla</h3>
+          <p>Tender, seasoned fish.</p>
+          <div class="food-bottom">
+            <strong>₦1,000</strong>
+            <button class="add-to-cart" data-name="Eja Panla" data-price="1000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Protein">
+        <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b96?auto=format&fit=crop&w=700&q=80" alt="Turkey">
+        <div class="food-info">
+          <span class="food-category">Protein</span>
+          <h3>Turkey</h3>
+          <p>Flavourful turkey portion.</p>
+          <div class="food-bottom">
+            <strong>₦4,000</strong>
+            <button class="add-to-cart" data-name="Turkey" data-price="4000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+<!-- SOUP CATEGORY -->
+
+<article class="food-card" data-category="Soup">
+  <img src="IMG/egusi.jpg" alt="Egusi soup">
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Egusi Soup</h3>
+    <p>Rich Nigerian melon seed soup.</p>
+    <div class="food-bottom">
+      <strong>₦300</strong>
+      <button class="add-to-cart"
+        data-name="Egusi Soup"
+        data-price="300"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<article class="food-card" data-category="Soup">
+  <img
+    src="IMG/efo.jpg"alt="Efo riro"
+  >
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Efo Riro</h3>
+    <p>Traditional Nigerian vegetable soup.</p>
+    <div class="food-bottom">
+      <strong>₦300</strong>
+      <button class="add-to-cart"
+        data-name="Efo Riro"
+        data-price="300"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<article class="food-card" data-category="Soup">
+  <img
+    src="IMG/gbegiri.jpg"alt="Gbegiri soup">
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Gbegiri Soup</h3>
+    <p>Delicious, traditionalsoup.</p>
+    <div class="food-bottom">
+    <strong>₦300</strong>
+    <button class="add-to-cart"
+        data-name="Gbegiri Soup"
+        data-price="300"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<article class="food-card" data-category="Soup">
+  <img
+    src="IMG/okro.jpg" alt="Okra soup">
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Okra Soup</h3>
+    <p>Fresh and flavourful okra soup.</p>
+    <div class="food-bottom">
+      <strong>₦200</strong>
+      <button class="add-to-cart"
+        data-name="Okra Soup"
+        data-price="200"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<!-- <article class="food-card" data-category="Soup">
+  <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+    alt="Afang soup"
+  >
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Afang Soup</h3>
+    <p>Traditional vegetable soup with rich flavour.</p>
+    <div class="food-bottom">
+      <strong>₦4,000</strong>
+      <button class="add-to-cart"
+        data-name="Afang Soup"
+        data-price="4000"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<article class="food-card" data-category="Soup">
+  <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+    alt="Banga soup"
+  >
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Banga Soup</h3>
+    <p>Rich palm fruit soup with traditional spices.</p>
+    <div class="food-bottom">
+      <strong>₦4,000</strong>
+      <button class="add-to-cart"
+        data-name="Banga Soup"
+        data-price="4000"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article>
+
+<article class="food-card" data-category="Soup">
+  <img
+    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+    alt="Vegetable soup"
+  >
+  <div class="food-info">
+    <span class="food-category">Soup</span>
+    <h3>Vegetable Soup</h3>
+    <p>Nutritious, tasty Nigerian vegetable soup.</p>
+    <div class="food-bottom">
+      <strong>₦3,500</strong>
+      <button class="add-to-cart"
+        data-name="Vegetable Soup"
+        data-price="3500"
+        type="button">Add +</button>
+    </div>
+  </div>
+</article> -->
+      <!-- DRINKS -->
+      <article class="food-card" data-category="Drinks">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80" alt="Fruit juice">
+        <div class="food-info">
+          <span class="food-category">Drinks</span>
+          <h3>Fruit Juice</h3>
+          <p>Refreshing fruit juice.</p>
+          <div class="food-bottom">
+            <strong>₦2,000</strong>
+            <button class="add-to-cart" data-name="Fruit Juice" data-price="2000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Drinks">
+        <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=80" alt="Smoothie">
+        <div class="food-info">
+          <span class="food-category">Drinks</span>
+          <h3>Fruit Smoothie</h3>
+          <p>Cool and creamy smoothie.</p>
+          <div class="food-bottom">
+            <strong>₦2,500</strong>
+            <button class="add-to-cart" data-name="Fruit Smoothie" data-price="2500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Drinks">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Soft drink">
+        <div class="food-info">
+          <span class="food-category">Drinks</span>
+          <h3>Soft Drink</h3>
+          <p>A chilled soft drink.</p>
+          <div class="food-bottom">
+            <strong>₦800</strong>
+            <button class="add-to-cart" data-name="Soft Drink" data-price="800">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Drinks">
+        <img src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=700&q=80" alt="Zobo drink">
+        <div class="food-info">
+          <span class="food-category">Drinks</span>
+          <h3>Zobo</h3>
+          <p>Refreshing Nigerian hibiscus drink.</p>
+          <div class="food-bottom">
+            <strong>₦1,000</strong>
+            <button class="add-to-cart" data-name="Zobo" data-price="1000">Add +</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="food-card" data-category="Drinks">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=700&q=80" alt="Lemonade">
+        <div class="food-info">
+          <span class="food-category">Drinks</span>
+          <h3>Lemonade</h3>
+          <p>A refreshing citrus drink.</p>
+          <div class="food-bottom">
+            <strong>₦1,500</strong>
+            <button class="add-to-cart" data-name="Lemonade" data-price="1500">Add +</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- DELIVERY PAGE -->
+  <section id="delivery" class="page-section" hidden>
+    <div class="section-heading">
+      <p class="eyebrow">DELIVERY INFORMATION</p>
+      <h2>Let's Deliver Happiness</h2>
+      <p>Provide your details and review your order before sending it.</p>
+    </div>
+
+    <div class="delivery-layout">
+      <form id="delivery-form" class="delivery-form">
+        <h3>Your Details</h3>
+
+        <label for="customer-name">Full Name</label>
+        <input id="customer-name" name="name" required placeholder="Enter your full name">
+
+        <label for="customer-phone">Phone Number</label>
+        <input id="customer-phone" name="phone" type="tel" required placeholder="Enter your phone number">
+
+        <label for="customer-address">Delivery Address</label>
+        <textarea id="customer-address" name="address" required placeholder="House number, street and landmark"></textarea>
+
+        <label for="customer-area">Area / City</label>
+        <input id="customer-area" name="area" required placeholder="e.g. Ikeja, Lagos">
+
+        <label for="delivery-instructions">Delivery Instructions (Optional)</label>
+        <textarea id="delivery-instructions" name="instructions" placeholder="Any directions for the rider?"></textarea>
+
+        <label for="payment-method">Preferred Payment Method</label>
+        <select id="payment-method" name="payment" required>
+          <option value="Pay on delivery">Pay on delivery (confirm with restaurant)</option>
+          <option value="Bank transfer">Bank transfer (confirm with restaurant)</option>
+        </select>
+
+        <button class="primary-button submit-order" type="submit">
+          Send Order via WhatsApp
+        </button>
+
+        <p class="small-note">
+          Your order will be prepared as a WhatsApp message for you to review and send.
+        </p>
+      </form>
+
+      <div class="order-box">
+        <h3>Your Order Summary</h3>
+        <div id="delivery-order-items">
+          <p>Your cart is empty.</p>
+        </div>
+        <hr>
+        <p>Subtotal <strong id="delivery-subtotal">₦0</strong></p>
+        <p>Delivery fee <strong id="delivery-fee">₦0</strong></p>
+        <p class="total-line">Total <strong id="delivery-total">₦0</strong></p>
+        <button id="back-to-menu" class="secondary-button" type="button">Continue Shopping</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact" class="contact-section">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h2>Contact Abeke's Kitchen</h2>
+    <p>Questions about our menu or delivery? Contact us.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span>📍</span>
+        <h3>Our Address</h3>
+        <p id="restaurant-address">12 Food Street, Ikeja, Lagos, Nigeria</p>
+      </div>
+
+      <div class="contact-card">
+        <span>📞</span>
+        <h3>Call Us</h3>
+        <a id="restaurant-phone" href="tel:+2348000000000">0800 000 0000 (sample number)</a>
+      </div>
+
+      <div class="contact-card">
+        <span>🕒</span>
+        <h3>Opening Hours</h3>
+        <p>Monday – Saturday</p>
+        <p>9:00 AM – 9:00 PM</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Abeke's Kitchen. Made with love.</p>
+</footer>
+
+<!-- CART OVERLAY -->
+<div id="cart-overlay" class="cart-overlay" hidden></div>
+
+<aside id="cart-panel" class="cart-panel" aria-label="Shopping cart" aria-hidden="true" inert>
+  <div class="cart-header">
+    <div>
+      <p class="eyebrow">YOUR ORDER</p>
+      <h2>Your Cart (<span id="panel-cart-count">0</span>)</h2>
+    </div>
+    <button id="close-cart" class="close-cart" type="button" aria-label="Close cart">✕</button>
+  </div>
+
+  <div id="cart-items" class="cart-items"></div>
+  <p id="empty-cart" class="empty-cart">Your cart is empty. Add something delicious!</p>
+
+  <div class="cart-summary">
+    <p>Subtotal <strong>₦<span id="cart-subtotal">0</span></strong></p>
+    <p>Delivery <strong>₦<span id="cart-delivery">0</span></strong></p>
+    <p class="grand-total">Total <strong>₦<span id="cart-total">0</span></strong></p>
+    <button id="checkout-button" class="checkout-button" type="button">Proceed to Delivery</button>
+    <button id="clear-cart" class="clear-cart" type="button">Clear Cart</button>
+  </div>
+</aside>
+
+</body>
+</html>
